@@ -7,20 +7,20 @@
                         <div class="logo-login"></div>
                         <div class="bottom-section padding">
                             <div class="w-form">
-                                <form id="submit-form" name="email-form" data-name="Email Form" > <!--data-redirect="settings.html" action="#"-->
+                                <form id="submit-form" name="email-form" data-name="Email Form" novalidate="" > <!--data-redirect="settings.html" action="#"-->
                                     <div>
-                                        <label class="label-form" for="email-field" >USERNAME</label>
-                                        <input class="w-input input-newway" id="email-field" type="email" name="email" data-name="email" required="required" ng-model="username">
+                                        <label class="label-form" for="tel-field" >Tel No.</label>
+                                        <input class="w-input input-newway" id="tel-field" type="tel" name="tel" data-name="tel" required="required" ng-model="tel">
                                         <div class="separator-fields"></div>
                                     </div>
                                     <div>
-                                        <label class="label-form" for="email">PASSWORD</label>
+                                        <label class="label-form" for="password-field">PASSWORD</label>
                                         <div class="w-clearfix block-input-combined">
                                             <input class="w-input input-newway left" id="password-field" type="password" name="password" data-name="password" required="required"ng-model="password"><a class="right-input-link" href="forgot.html" data-load="1">Forgot Password</a>
                                         </div>
                                         <div class="separator-button-input"></div>
                                     </div>
-                                    <input ng-click="login(username,password)" class="w-button action-button" type="submit" value="Sign In" data-wait="Please wait...">
+                                    <input ng-click="login(tel,password)" class="w-button action-button" type="submit" value="Sign In" data-wait="Please wait...">
                                     <div class="separator-button"></div><a class="link-upper" href="#/signup" data-load="1">YOU DON’T HAVE AN ACCOUNT? <strong class="b-link">SIGN UP</strong></a>
                                 </form>
                                 <div class="w-form-done">

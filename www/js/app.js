@@ -35,9 +35,11 @@ example.config(function ($stateProvider, $urlRouterProvider) {
 });
 //The login Controller(Login,register)
 example.controller("LoginController", function ($scope, $firebaseAuth, $state, $location) {
-    $scope.login = function (username, password) {
+    $scope.login = function (tel, password) {
         var auth = $firebaseAuth();
-        auth.$signInWithEmailAndPassword(username, password)
+        var tel = tel+"@pandaville.com";
+        console.log(tel);
+        auth.$signInWithEmailAndPassword(tel, password)
         .then(function (userData) {
             $state.go('todo');
         }).catch(function (error) {
